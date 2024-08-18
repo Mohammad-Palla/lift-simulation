@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lift simulation RealDevSquad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1>Lift Simulation RealDevSquad</h1>
+  <div id="landingPage">
+    <form id="form">
+      <div class="input-container">
+        <div>
+          <label for="inputFloor">Number of floors : </label>
+          <input type="number" id="inputFloor" placeholder="floors" />
+        </div>
+        <div>
+          <label for="inputLift">Number of Lifts : </label>
+          <input type="number" id="inputLift" placeholder="Lifts" />
+        </div>
+      </div>
+    </form>
+    <button id="generate">Generate</button>
+  </div>
+
+  <div class="container hidden">
+
+    <div class="floor-container">
+      <span><button class="btn btn-up" id="btn-up-first">Up</button></span>
+      <div class="lift first-lift">
+        <div class="left-door"></div>
+        <div class="right-door"></div>
+      </div>
+
+      <div class="horizontal-flex">
+        <hr />
+        <p>Floor 0</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
